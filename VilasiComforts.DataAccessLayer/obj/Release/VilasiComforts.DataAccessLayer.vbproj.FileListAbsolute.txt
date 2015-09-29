@@ -1,0 +1,9 @@
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\bin\VilasiComforts.DataAccessLayer.dll.config
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\bin\VilasiComforts.DataAccessLayer.dll
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\bin\VilasiComforts.DataAccessLayer.pdb
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\bin\VilasiComforts.DataAccessLayer.xml
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\obj\Release\VilasiComforts.DataAccessLayer.Resources.resources
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\obj\Release\VilasiComforts.DataAccessLayer.vbproj.GenerateResource.Cache
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\obj\Release\VilasiComforts.DataAccessLayer.dll
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\obj\Release\VilasiComforts.DataAccessLayer.xml
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.DataAccessLayer\obj\Release\VilasiComforts.DataAccessLayer.pdb

@@ -1,0 +1,132 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="VilasiAdmin.master.vb" Inherits="VilasiComforts.VilasiAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" type="image/icon" href="Images/Favicon.ico" />
+    <title><%: Page.Title %> - Vilasi Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet" />
+
+    <!-- Timeline CSS -->
+    <link href="dist/css/timeline.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet" />
+    <link href="App_Themes/VilasiAdmin.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="App_Themes/font-awesome.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: Arial,sans-serif">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scrpt1" runat="server"></asp:ScriptManager>
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="DashBoard.aspx" class="navbar-brand">
+                        <img src="../Images/logo2.jpg" alt="" height="32" width="220"/>
+                        <%--<img src="../Images/logo1.png" height="15" width="15"/>Vilasi Comforts--%>
+                    </a>
+                </div>
+                <!-- /.navbar-header -->
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li style="font-weight: bold"><i>USER : 
+                        <asp:Label ID="LblUserName" runat="server"></asp:Label>&nbsp;&nbsp;&nbsp;</i>
+                    </li>
+                    <li class="dropdown">
+                        <a href="http://email.vilasicomforts.com" target="_blank" style="width: 80px">
+                            <i class="fa fa-envelope fa-fw">&nbsp;Mail</i>
+                        </a>
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a href="../LogOut" style="width: 80px">
+                            <i class="fa fa-sign-out fa-fw">&nbsp;Logout</i>
+                        </a>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="DashBoard"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-wrench fa-fw"></i>Room Booking System<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="AllotRoom">Allot Room</a>
+                                    </li>
+                                    <li>
+                                        <a href="AsignRoom">Assign Room</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+            <!-- /#page-wrapper -->
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer_bg">
+            <div class="wrap">
+
+                <div class="footer">
+                    <div class="copy">
+                        <p class="link"><span>© All rights reserved Vilasi Comforts | Powered by&nbsp;<a href="http://gltech.in/" target="_blank"> Green Leaf Technologies</a></span></p>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- jQuery -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../../dist/js/sb-admin-2.js"></script>
+</body>
+</html>

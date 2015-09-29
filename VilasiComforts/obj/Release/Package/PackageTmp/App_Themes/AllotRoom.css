@@ -1,0 +1,13 @@
+﻿body {
+}
+
+.row {
+    float:none !important;
+    width:100% !important;
+}
+
+.well{
+    padding:0px !important;
+    background-color:white !important;
+    border:none !important;
+}

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="VilasiComforts-Web.config Connection String" description="VilasiComforts Connection String used in web.config by the application to access the database." defaultValue="Data Source=184.168.194.64;Initial Catalog=VilasiDB;Persist Security Info=True;User ID=Vilasi;Password=Vilasi@123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\MyProject\\20150805\\VilasiComfortsNew\\VilasiComforts\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='VilasiComforts']/@connectionString" />
+  </parameter>
+</parameters>

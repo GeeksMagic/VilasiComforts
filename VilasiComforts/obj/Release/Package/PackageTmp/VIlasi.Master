@@ -1,0 +1,164 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="VIlasi.master.vb" Inherits="VilasiComforts.VIlasi" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> - Vilasi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="Vilasi Comforts" content="Vilasi Comforts tumkur, vilasi, ac deluxe lodge in tumkur" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+    <link href="App_Themes/style.css" rel="stylesheet" />
+    <script src="JQuery/jquery.min.js"></script>
+    <link href="App_Themes/bootstrap-theme.css" rel="stylesheet" />
+    <link href="App_Themes/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="App_Themes/bootstrap.css" rel="stylesheet" />
+    <link href="App_Themes/bootstrap.min.css" rel="stylesheet" />
+    <link href="App_Themes/font-awesome.min.css" rel="stylesheet" />
+    <link href="App_Themes/font-awesome.css" rel="stylesheet" />
+    <link href="App_Themes/VilasiAdmin.css" rel="stylesheet" />
+    <!--start slider -->
+    <%--<link href="App_Themes/style1.css" rel="stylesheet" />--%>
+    <link href="App_Themes/fwslider.css" rel="stylesheet" />
+    <script src="JQuery/jquery-ui.min.js"></script>
+    <script src="JQuery/css3-mediaqueries.js"></script>
+    <script src="JQuery/fwslider.js"></script>
+    <!--end slider -->
+    <!---strat-date-piker---->
+    <link href="App_Themes/jquery-ui.css" rel="stylesheet" />
+    <script src="JQuery/jquery-ui.js"></script>
+    <script src="JQuery/jquery.maskedinput.js"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="JQuery/modernizr.custom.js"></script>
+    <script src="JQuery/move-top.js"></script>
+    <script src="JQuery/easing.js"></script>
+    <script src="JQuery/nivo-lightbox.min.js"></script>
+    <script src="JQuery/jquery.blockUI.js"></script>
+
+    <!---/End-date-piker---->
+    <%--<link href="App_Themes/Master.css" rel="stylesheet" />--%>
+    <%--<script src="js/Master.js"></script>--%>
+    <link href="App_Themes/magnific-popup.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+    <link href="App_Themes/JFFormStyle-1.css" rel="stylesheet" />
+    <script src="JQuery/JFCore.js"></script>
+    <script src="JQuery/JFForms.js"></script>
+    <link rel="shortcut icon" type="image/icon" href="Images/Favicon.ico" />
+    <!-- Set here the key for your domain in order to hide the watermark on the web server -->
+    <script type="text/javascript">
+        (function () {
+            JC.init({
+                domainKey: ''
+            });
+        })();
+    </script>
+    <!--nav-->
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" method="post">
+        <%--<Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></Ajax:ToolkitScriptManager>--%>
+        <asp:ScriptManager ID="script" runat="server">
+        </asp:ScriptManager>
+
+        <div class="navbar-fixed-top">
+            <div class="header_bg">
+                <div class="wrap">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="Index.aspx">
+                                <img src="Images/Logo.png" alt=""></a>
+                        </div>
+
+                        <div class="h_right">
+                            <!--start menu -->
+                            <ul class="menu">
+                                <li><a href="Index">Home</a></li>
+                                |
+				            <li><a href="About">About</a></li>
+                                |
+				            <li><a href="BookRoom">Book My Room</a></li>
+                                |
+				            <li><a href="Gallery">Gallery</a></li>
+                                |
+                            <li><a href="Services">Services</a></li>
+                                |
+				            <li><a href="ContactUs">contact</a></li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="top-nav">
+                            <nav class="clearfix">
+                                <ul>
+                                    <li><a href="Index">Home</a></li>
+                                    <li><a href="About">About</a></li>
+                                    <li><a href="BookRoom">Book My Room</a></li>
+                                    <li><a href="Gallery">Gallery</a></li>
+                                    <li><a href="Services">Services</a></li>
+                                    <li><a href="ContactUs">contact</a></li>
+                                </ul>
+                                <a href="#" id="pull">Menu</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1">
+        </asp:ContentPlaceHolder>
+        <div class="footer_bg">
+            <div class="wrap">
+
+                <div class="footer">
+                    <div class="copy">
+                        <p class="link"><span>© All rights reserved Vilasi Comforts | Powered by&nbsp;<a href="http://gltech.in/" target="_blank"> Green Leaf Technologies</a></span></p>
+                    </div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="Index">Home</a></li>
+                            <li><a href="About">About</a></li>
+                            <li><a href="BookRoom">Book My Room</a></li>
+                            <li><a href="Gallery">Gallery</a></li>
+                            <li><a href="Services">Services</a></li>
+                            <li><a href="ContactUs">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="soc_icons">
+                        <ul>
+                            <li><a class="icon1" href="https://www.facebook.com/VilasiComforts" target="_blank"></a></li>
+                            <li><a class="icon2" href="http://Twitter.com" target="_blank"></a></li>
+                            <li><a class="icon3" href="http://plus.google.com" target="_blank"></a></li>
+                            <li><a class="icon4" href="http://Linkedin.com" target="_blank"></a></li>
+                            <%--<li><a class="icon5" href="#"></a></li>--%>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

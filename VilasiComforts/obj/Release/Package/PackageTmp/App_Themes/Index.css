@@ -1,0 +1,56 @@
+﻿@media (min-width: 320px) {
+  body {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 720px) {
+  body {
+    margin-top: 10px;
+  }
+}
+
+.textbox{
+    background:url(../images/cal-icon.png) no-repeat 100% 50% #FFF;
+}
+
+.headvilasi{
+    font-weight:bold;
+    font-size:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+.reserve{
+    font-size:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+@media (min-width: 720px) {
+    .welcome {
+        border: dotted;
+        border-top: dotted;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-top-color: #808080;
+        border-top-width: thin;
+        margin-top:130px;
+    }
+}
+
+@media (min-width: 720px) {
+    .services {
+        border: dotted;
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: dotted;
+        border-right-color: #808080;
+        border-right-width: thin;
+    }
+}
+
+.spcl{
+ font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}

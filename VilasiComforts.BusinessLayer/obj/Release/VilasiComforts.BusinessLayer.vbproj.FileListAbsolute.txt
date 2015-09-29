@@ -1,0 +1,13 @@
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.BusinessLayer.dll.config
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.BusinessLayer.dll
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.BusinessLayer.pdb
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.BusinessLayer.xml
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.DataAccessLayer.dll
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.DataAccessLayer.pdb
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\bin\VilasiComforts.DataAccessLayer.xml
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.vbprojResolveAssemblyReference.cache
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.Resources.resources
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.vbproj.GenerateResource.Cache
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.dll
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.xml
+D:\MyProject\20150805\VilasiComfortsNew\VilasiComforts.BusinessLayer\obj\Release\VilasiComforts.BusinessLayer.pdb
