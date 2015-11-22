@@ -486,7 +486,7 @@
                             </div>
                             <asp:TextBox ID="service_provider" runat="server" Text="payu_paisa" Style="display: none" />
                             <asp:TextBox ID="productinfo" runat="server" Text="RoomBooking" Style="display: none"></asp:TextBox>
-                            <asp:TextBox ID="surl" runat="server" Text="http://Localhost:2015/BookRoom.aspx" Style="display: none"></asp:TextBox>
+                            <asp:TextBox ID="surl" runat="server" Text="http://Localhost:2015/Home.aspx" Style="display: none"></asp:TextBox>
                             <asp:TextBox ID="furl" runat="server" Text="http://Localhost:2015/Home.aspx" Style="display: none"></asp:TextBox>
                         </div>
                     </div>
@@ -505,16 +505,16 @@
                             <h5><a href="#">Non-AC Double Room<span>₹ 1250</span></a></h5>
                             <p class="text-justify">Room Service, Multilingual Staff, 24/7 Hot Water Available, Wifi Internet Access, Complimentary Mineral Water Bottle, Food on Request, Laundry Service, Dry Cleaning, Rooms on Monthly Basis.</p>
                         </div>
-                        <div class="grid1_of_3">
+                       <%-- <div class="grid1_of_3">
                             <div class="grid1_of_3_img">
                                 <a href="#">
                                     <img src="images/124.jpg" alt="" />
-                                    <%--<span class="next"></span>--%>
+                                    <%--<span class="next"></span>--%
                                 </a>
                             </div>
                             <h5><a href="#">Non-AC Single Room <span>₹ 900</span></a></h5>
                             <p class="text-justify">Room Service, Multilingual Staff, 24/7 Hot Water Available, Wifi Internet Access, Complimentary Mineral Water Bottle, Food on Request, Laundry Service, Dry Cleaning, Rooms on Monthly Basis.</p>
-                        </div>
+                        </div>--%>
                         <div class="grid1_of_3">
                             <div class="grid1_of_3_img">
                                 <a href="#">

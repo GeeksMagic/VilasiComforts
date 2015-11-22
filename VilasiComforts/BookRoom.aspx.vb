@@ -217,7 +217,8 @@ Public Class BookRoom
             LblGuestAdults.Text = LblNumAdults.Text
             LblGuestChildrens.Text = LblNumChilds.Text
             LblGuestAmount.Text = LblAmount.Text
-            amount.Text = LblAmount.Text
+            'amount.Text = LblAmount.Text
+            amount.Text = "1"
             LblSpclRequirements.Text = TxtRequest.Text
         Else
             ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('Please Agree with the Terms & Conditions of Vilasi!!!!');", True)
@@ -241,118 +242,127 @@ Public Class BookRoom
     End Sub
 
     Private Sub BtnPay_Click(sender As Object, e As EventArgs) Handles BtnPay.Click
-        'Try
+        Try
 
-        '    Dim hashVarsSeq As String()
-        '    Dim hash_string As String = String.Empty
-
-
-        '    If String.IsNullOrEmpty(Request.Form("txnid")) Then
-        '        ' generating txnid
-        '        Dim rnd As New Random()
-        '        Dim strHash As String = Generatehash512(rnd.ToString() & DateTime.Now)
-
-        '        txnid1 = strHash.ToString().Substring(0, 20)
-        '    Else
-        '        txnid1 = Request.Form("txnid")
-        '    End If
-        '    If String.IsNullOrEmpty(Request.Form("hash")) Then
-        '        ' generating hash value
-        '        If String.IsNullOrEmpty(ConfigurationManager.AppSettings("MERCHANT_KEY")) OrElse String.IsNullOrEmpty(txnid1) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$amount")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$firstname")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$email")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$phone")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$productinfo")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$surl")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$furl")) OrElse String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$service_provider")) Then
-        '            'error
-
-        '            'frmError.Visible = True
-        '            Return
-        '        Else
-
-        '            'frmError.Visible = False
-        '            hashVarsSeq = ConfigurationManager.AppSettings("hashSequence").Split("|"c)
-        '            ' spliting hash sequence from config
-        '            hash_string = ""
-        '            For Each hash_var As String In hashVarsSeq
-        '                If hash_var = "key" Then
-        '                    hash_string = hash_string + ConfigurationManager.AppSettings("MERCHANT_KEY")
-        '                    hash_string = hash_string & "|"c
-        '                ElseIf hash_var = "txnid" Then
-        '                    hash_string = hash_string & txnid1
-        '                    hash_string = hash_string & "|"c
-        '                ElseIf hash_var = "amount" Then
-        '                    hash_string = hash_string & amount.Text
-        '                    hash_string = hash_string & "|"c
-        '                Else
-
-        '                    hash_string = hash_string & (If(Request.Form(hash_var) IsNot Nothing, Request.Form(hash_var), ""))
-        '                    ' isset if else
-        '                    hash_string = hash_string & "|"c
-        '                End If
-        '            Next
-
-        '            hash_string += ConfigurationManager.AppSettings("SALT")
-        '            ' appending SALT
-        '            hash1 = Generatehash512(hash_string).ToLower()
-        '            'generating hash
-        '            ' setting URL
-        '            action1 = ConfigurationManager.AppSettings("PAYU_BASE_URL") + "/_payment"
+            Dim hashVarsSeq As String()
+            Dim hash_string As String = String.Empty
 
 
-        '        End If
+            If String.IsNullOrEmpty(Request.Form("txnid")) Then
+                ' generating txnid
+                Dim rnd As New Random()
+                Dim strHash As String = Generatehash512(rnd.ToString() & DateTime.Now)
 
-        '    ElseIf Not String.IsNullOrEmpty(Request.Form("hash")) Then
-        '        hash1 = Request.Form("hash")
+                txnid1 = strHash.ToString().Substring(0, 20)
+            Else
+                txnid1 = Request.Form("txnid")
+            End If
+            If String.IsNullOrEmpty(Request.Form("hash")) Then
+                ' generating hash value
+                If String.IsNullOrEmpty(ConfigurationManager.AppSettings("MERCHANT_KEY")) OrElse
+                    String.IsNullOrEmpty(txnid1) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$amount")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$firstname")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$email")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$phone")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$productinfo")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$surl")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$furl")) OrElse
+                    String.IsNullOrEmpty(Request.Form("ctl00$ContentPlaceHolder1$service_provider")) Then
+                    'error
 
-        '        action1 = ConfigurationManager.AppSettings("PAYU_BASE_URL") + "/_payment"
-        '    End If
+                    'frmError.Visible = True
+                    Return
+                Else
+
+                    'frmError.Visible = False
+                    hashVarsSeq = ConfigurationManager.AppSettings("hashSequence").Split("|"c)
+                    ' spliting hash sequence from config
+                    hash_string = ""
+                    For Each hash_var As String In hashVarsSeq
+                        If hash_var = "key" Then
+                            hash_string = hash_string + ConfigurationManager.AppSettings("MERCHANT_KEY")
+                            hash_string = hash_string & "|"c
+                        ElseIf hash_var = "txnid" Then
+                            hash_string = hash_string & txnid1
+                            hash_string = hash_string & "|"c
+                        ElseIf hash_var = "amount" Then
+                            hash_string = hash_string & amount.Text
+                            hash_string = hash_string & "|"c
+                        Else
+
+                            hash_string = hash_string & (If(Request.Form("ctl00$ContentPlaceHolder1$" + hash_var) IsNot Nothing, Request.Form("ctl00$ContentPlaceHolder1$" + hash_var), ""))
+                            ' isset if else
+                            hash_string = hash_string & "|"c
+                        End If
+                    Next
+
+                    hash_string += ConfigurationManager.AppSettings("SALT")
+                    ' appending SALT
+                    hash1 = Generatehash512(hash_string).ToLower()
+                    'generating hash
+                    ' setting URL
+                    action1 = ConfigurationManager.AppSettings("PAYU_BASE_URL") + "/_payment"
+
+
+                End If
+
+            ElseIf Not String.IsNullOrEmpty(Request.Form("hash")) Then
+                hash1 = Request.Form("hash")
+
+                action1 = ConfigurationManager.AppSettings("PAYU_BASE_URL") + "/_payment"
+            End If
 
 
 
 
-        '    If Not String.IsNullOrEmpty(hash1) Then
-        '        hash.Value = hash1
-        '        txnid.Value = txnid1
+            If Not String.IsNullOrEmpty(hash1) Then
+                hash.Value = hash1
+                txnid.Value = txnid1
 
-        '        Dim data As New System.Collections.Hashtable()
-        '        ' adding values in gash table for data post
-        '        data.Add("hash", hash.Value)
-        '        data.Add("txnid", txnid.Value)
-        '        data.Add("key", key.Value)
-        '        Dim AmountForm As String = Convert.ToDecimal(amount.Text.Trim()).ToString("g29")
-        '        ' eliminating trailing zeros
-        '        amount.Text = AmountForm
-        '        data.Add("amount", AmountForm)
-        '        data.Add("firstname", firstname.Text.Trim())
-        '        data.Add("email", email.Text.Trim())
-        '        data.Add("phone", phone.Text.Trim())
-        '        data.Add("productinfo", productinfo.Text.Trim())
-        '        data.Add("surl", surl.Text.Trim())
-        '        data.Add("furl", furl.Text.Trim())
-        '        data.Add("lastname", "")
-        '        data.Add("curl", "")
-        '        data.Add("address1", LblGuestAddress.Text)
-        '        data.Add("address2", "")
-        '        data.Add("city", LblGuestCity1.Text)
-        '        data.Add("state", "")
-        '        data.Add("country", "")
-        '        data.Add("zipcode", LblGuestZip.Text)
-        '        data.Add("udf1", "")
-        '        data.Add("udf2", "")
-        '        data.Add("udf3", "")
-        '        data.Add("udf4", "")
-        '        data.Add("udf5", "")
-        '        data.Add("pg", "")
-        '        data.Add("service_provider", service_provider.Text.Trim())
-        '        Dim strForm As String = PreparePOSTForm(action1, data)
-        '        Page.Controls.Add(New LiteralControl(strForm))
-        '    Else
-        '        'no hash
-        '    End If
+                Dim data As New System.Collections.Hashtable()
+                ' adding values in gash table for data post
+                data.Add("hash", hash.Value)
+                data.Add("txnid", txnid.Value)
+                data.Add("key", key.Value)
+                Dim AmountForm As String = Convert.ToDecimal(amount.Text.Trim()).ToString("g29")
+                ' eliminating trailing zeros
+                amount.Text = AmountForm
+                data.Add("amount", AmountForm)
+                data.Add("firstname", firstname.Text.Trim())
+                data.Add("email", email.Text.Trim())
+                data.Add("phone", phone.Text.Trim())
+                data.Add("productinfo", productinfo.Text.Trim())
+                data.Add("surl", surl.Text.Trim())
+                data.Add("furl", furl.Text.Trim())
+                data.Add("lastname", "")
+                data.Add("curl", "")
+                data.Add("address1", LblGuestAddress.Text)
+                data.Add("address2", "")
+                data.Add("city", LblGuestCity1.Text)
+                data.Add("state", "")
+                data.Add("country", "")
+                data.Add("zipcode", LblGuestZip.Text)
+                data.Add("udf1", "")
+                data.Add("udf2", "")
+                data.Add("udf3", "")
+                data.Add("udf4", "")
+                data.Add("udf5", "")
+                data.Add("pg", "")
+                data.Add("service_provider", service_provider.Text.Trim())
+                Dim strForm As String = PreparePOSTForm(action1, data)
+                Page.Controls.Add(New LiteralControl(strForm))
+            Else
+                'no hash
+            End If
 
-        'Catch ex As Exception
+        Catch ex As Exception
 
 
-        '    Response.Write("<span style='color:red'>" & ex.Message & "</span>")
-        'End Try
+            Response.Write("<span style='color:red'>" & ex.Message & "</span>")
+        End Try
 
-        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('Sorry!! Service comimg soon');", True)
+        'ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('Sorry!! Service comimg soon');", True)
     End Sub
 
     Public Function Generatehash512(ByVal text As String) As String

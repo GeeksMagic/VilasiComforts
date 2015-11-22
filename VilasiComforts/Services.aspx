@@ -94,7 +94,7 @@
                     <h6>(Incl. of all taxes)</h6>
                     <ul class="s_nav">
                         <li><span class="fa fa-arrow-circle-o-right">&nbsp;Non-AC Double Room : ₹ 1250</span></li>
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;Non-AC Single Room : ₹ 900</span></li>
+                       <%-- <li><span class="fa fa-arrow-circle-o-right">&nbsp;Non-AC Single Room : ₹ 900</span></li>--%>
                         <li><span class="fa fa-arrow-circle-o-right">&nbsp;AC Double Room     : ₹ 1990</span></li>
                         <li><span class="fa fa-arrow-circle-o-right">&nbsp;Suits              : ₹ 3000</span></li>
                         <li><span class="fa fa-arrow-circle-o-right">&nbsp;Extra Bed          : ₹ 200</span></li>

@@ -41,7 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxControlToolkit">
-      <HintPath>C:\Users\Sushil Kumar\Downloads\AjaxToolKit4.1\AjaxToolKit4.1\AjaxControlToolkit.dll</HintPath>
+      <HintPath>..\..\..\02.09.2015\VilasiComfortsNew\VilasiComforts\bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -588,7 +588,6 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\PublishProfiles\softencode.in - Web Deploy.pubxml" />
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy %282%29.pubxml" />
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy %283%29.pubxml" />
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy.pubxml" />
@@ -646,7 +645,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50825</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50825/</IISUrl>
+          <IISUrl>http://localhost:2015/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

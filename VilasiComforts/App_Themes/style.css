@@ -292,7 +292,8 @@ select option{
 }
 .grid1_of_3{
 	float: left;
-	width: 21.7%;
+    /*altered*/
+	width: 30%;
 	margin-left: 4.33333%;
 
 }

@@ -455,6 +455,15 @@ Partial Public Class BookRoom
     Protected WithEvents RfvCity As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''RegularExpressionValidatorCity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegularExpressionValidatorCity As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''TxtZip control.
     '''</summary>
     '''<remarks>
@@ -471,6 +480,15 @@ Partial Public Class BookRoom
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RfvZip As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''RegularExpressionZip control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegularExpressionZip As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''TxtAddress control.
