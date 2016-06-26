@@ -24,4 +24,12 @@ Public Class DashBoardService
         Return objDashBoard.getCustomer(customerId, checkinDate, roomNo)
     End Function
 
+    Public Function updatePrice(ByVal price As String, ByVal type As String)
+        Return objDashBoard.updateRoomPrice(price, type)
+    End Function
+
+    Function BlockRoom(checkInDate As String, roomType As String, block As String) As Boolean
+        Return objDashBoard.BlockRoom(checkInDate, roomType, block)
+    End Function
+
 End Class

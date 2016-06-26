@@ -236,6 +236,7 @@
     <Content Include="bower_components\metisMenu\Gruntfile.js" />
     <Content Include="bower_components\metisMenu\src\metisMenu.css" />
     <Content Include="bower_components\metisMenu\src\metisMenu.js" />
+    <Content Include="ConfirmationMail.html" />
     <Content Include="ContactFormTemplate.html" />
     <Content Include="ContactUs.aspx" />
     <Content Include="dist\css\sb-admin-2.css" />
@@ -271,6 +272,9 @@
     <Content Include="Images\126t.jpg" />
     <Content Include="Images\127.JPG" />
     <Content Include="Images\128.JPG" />
+    <Content Include="Images\211.JPG" />
+    <Content Include="Images\212.JPG" />
+    <Content Include="Images\213.JPG" />
     <Content Include="Images\Build.jpg" />
     <Content Include="Images\Build.PNG" />
     <Content Include="Images\cal-icon.png" />
@@ -305,13 +309,13 @@
     <Content Include="Images\stripe1.png" />
     <Content Include="Images\s_icons.png" />
     <Content Include="Index.aspx" />
-    <Content Include="JQuery\bootstrap.js" />
-    <Content Include="JQuery\bootstrap.min.js" />
-    <Content Include="JQuery\css3-mediaqueries.js" />
-    <Content Include="JQuery\easing.js" />
-    <Content Include="JQuery\fwslider.js" />
-    <Content Include="JQuery\JFCore.js" />
-    <Content Include="JQuery\JFForms.js" />
+    <Content Include="js\JQuery\bootstrap.js" />
+    <Content Include="js\JQuery\bootstrap.min.js" />
+    <Content Include="js\JQuery\css3-mediaqueries.js" />
+    <Content Include="js\JQuery\easing.js" />
+    <Content Include="js\JQuery\fwslider.js" />
+    <Content Include="js\JQuery\JFCore.js" />
+    <Content Include="js\JQuery\JFForms.js" />
     <Content Include="Fonts\fontawesome-webfont.eot" />
     <Content Include="Fonts\fontawesome-webfont.ttf" />
     <Content Include="Fonts\fontawesome-webfont.woff" />
@@ -418,37 +422,39 @@
     <Content Include="bower_components\metisMenu\LICENSE" />
     <Content Include="bower_components\metisMenu\package.json" />
     <Content Include="bower_components\metisMenu\README.md" />
-    <None Include="JQuery\jquery-2.1.1.intellisense.js" />
-    <Content Include="JQuery\jquery-1.11.1.js" />
-    <Content Include="JQuery\jquery-1.11.1.min.js" />
-    <Content Include="JQuery\jquery-2.1.1.js" />
-    <Content Include="JQuery\jquery-ui.js" />
-    <Content Include="JQuery\jquery-ui.min.js" />
-    <Content Include="JQuery\jquery.backstretch.js" />
-    <Content Include="JQuery\jquery.backstretch.min.js" />
-    <Content Include="JQuery\jquery.blockUI.js" />
-    <Content Include="JQuery\jquery.maskedinput.js" />
-    <Content Include="JQuery\jquery.min.js" />
-    <Content Include="JQuery\jquery.swipebox.min.js" />
-    <Content Include="JQuery\metisMenu.js" />
-    <Content Include="JQuery\metisMenu.min.js" />
-    <Content Include="JQuery\modernizr.custom.js" />
-    <Content Include="JQuery\morris-data.js" />
-    <Content Include="JQuery\morris.js" />
-    <Content Include="JQuery\morris.min.js" />
-    <Content Include="JQuery\move-top.js" />
-    <Content Include="JQuery\nivo-lightbox.min.js" />
-    <Content Include="JQuery\raphael-min.js" />
-    <Content Include="JQuery\raphael.js" />
-    <Content Include="JQuery\responsiveslides.min.js" />
-    <Content Include="JQuery\sb-admin-2.js" />
-    <Content Include="JQuery\scripts.js" />
+    <None Include="js\JQuery\jquery-2.1.1.intellisense.js" />
+    <Content Include="js\JQuery\jquery-1.11.1.js" />
+    <Content Include="js\JQuery\jquery-1.11.1.min.js" />
+    <Content Include="js\JQuery\jquery-2.1.1.js" />
+    <Content Include="js\JQuery\jquery-ui.js" />
+    <Content Include="js\JQuery\jquery-ui.min.js" />
+    <Content Include="js\JQuery\jquery.backstretch.js" />
+    <Content Include="js\JQuery\jquery.backstretch.min.js" />
+    <Content Include="js\JQuery\jquery.blockUI.js" />
+    <Content Include="js\JQuery\jquery.maskedinput.js" />
+    <Content Include="js\JQuery\jquery.min.js" />
+    <Content Include="js\JQuery\jquery.swipebox.min.js" />
+    <Content Include="js\JQuery\metisMenu.js" />
+    <Content Include="js\JQuery\metisMenu.min.js" />
+    <Content Include="js\JQuery\modernizr.custom.js" />
+    <Content Include="js\JQuery\morris-data.js" />
+    <Content Include="js\JQuery\morris.js" />
+    <Content Include="js\JQuery\morris.min.js" />
+    <Content Include="js\JQuery\move-top.js" />
+    <Content Include="js\JQuery\nivo-lightbox.min.js" />
+    <Content Include="js\JQuery\raphael-min.js" />
+    <Content Include="js\JQuery\raphael.js" />
+    <Content Include="js\JQuery\responsiveslides.min.js" />
+    <Content Include="js\JQuery\sb-admin-2.js" />
+    <Content Include="js\JQuery\scripts.js" />
     <Content Include="js\BookRoom.js" />
     <Content Include="js\DashBoard.js" />
     <Content Include="js\flot-data.js" />
     <Content Include="js\Master.js" />
     <Content Include="js\morris-data.js" />
     <Content Include="LogOut.aspx" />
+    <Content Include="Notice.html" />
+    <Content Include="ResponseHandling.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -490,6 +496,7 @@
       <DependentUpon>DashBoard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="AdminPages\student.vb" />
     <Compile Include="BookRoom.aspx.designer.vb">
       <DependentUpon>BookRoom.aspx</DependentUpon>
     </Compile>
@@ -547,6 +554,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ResponseHandling.aspx.designer.vb">
+      <DependentUpon>ResponseHandling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResponseHandling.aspx.vb">
+      <DependentUpon>ResponseHandling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Services.aspx.designer.vb">
       <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
@@ -591,6 +605,7 @@
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy %282%29.pubxml" />
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy %283%29.pubxml" />
     <None Include="My Project\PublishProfiles\vilasicomforts.com - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\VilPublish.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -616,6 +631,10 @@
     <ProjectReference Include="..\VilasiComforts.DataAccessLayer\VilasiComforts.DataAccessLayer.vbproj">
       <Project>{c647681c-f601-4d77-87da-952f5cd34c75}</Project>
       <Name>VilasiComforts.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VilasiComforts.Model\VilasiComforts.Model.vbproj">
+      <Project>{05d5df40-9e5b-435e-8fc7-882e207bd2f8}</Project>
+      <Name>VilasiComforts.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

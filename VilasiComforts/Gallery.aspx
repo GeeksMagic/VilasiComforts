@@ -21,7 +21,47 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container" style="margin-top:100px;">
+    <div class="container"  style="margin-top:100px;">
+        <div class="portfolio">
+            <h2>Suit Rooms</h2>
+            <div class="products-bottom">
+                <div class="col-md-4 work-grid">
+                    <div id="nivo-lightbox-demo">
+                        <a href="Images/211.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+                            <img src="Images/211.jpg" class="img-responsive " alt="" />
+                            <div class="rotate">
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 work-grid">
+                    <div id="nivo-lightbox-demo">
+                        <a href="Images/212.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+                            <img src="Images/212.jpg" class="img-responsive " alt="" />
+                            <div class="rotate">
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 work-grid">
+                    <div id="nivo-lightbox-demo">
+                        <a href="Images/213.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+                            <img src="Images/213.jpg" class="img-responsive " alt="" />
+                            <div class="rotate">
+                                <i></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="portfolio">
             <h2>Non-AC Double Room</h2>
             <div class="products-bottom">
@@ -61,7 +101,7 @@
         </div>
     </div>
 
-    <div class="container">
+   <%-- <div class="container">
         <div class="portfolio">
             <h2>Non-AC Single Rooms</h2>
             <div class="products-bottom">
@@ -99,15 +139,15 @@
 
             <div class="clearfix"></div>
         </div>
-    </div>
+    </div>--%>
     <div class="container">
         <div class="portfolio">
             <h2>AC Double Rooms</h2>
             <div class="products-bottom">
                 <div class="col-md-4 work-grid">
                     <div id="nivo-lightbox-demo">
-                        <a href="Images/111.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/111.jpg" class="img-responsive " alt="" />
+                        <a href="Images/124.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+                            <img src="Images/124.jpg" class="img-responsive " alt="" />
                             <div class="rotate">
                                 <i></i>
                             </div>
@@ -116,48 +156,8 @@
                 </div>
                 <div class="col-md-4 work-grid">
                     <div id="nivo-lightbox-demo">
-                        <a href="Images/113.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/113.jpg" class="img-responsive " alt="" />
-                            <div class="rotate">
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 work-grid">
-                    <div id="nivo-lightbox-demo">
-                        <a href="Images/114.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/114.jpg" class="img-responsive " alt="" />
-                            <div class="rotate">
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="portfolio">
-            <h2>Suit Rooms</h2>
-            <div class="products-bottom">
-                <div class="col-md-4 work-grid">
-                    <div id="nivo-lightbox-demo">
-                        <a href="Images/211.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/211.jpg" class="img-responsive " alt="" />
-                            <div class="rotate">
-                                <i></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 work-grid">
-                    <div id="nivo-lightbox-demo">
-                        <a href="Images/212.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/212.jpg" class="img-responsive " alt="" />
+                        <a href="Images/126.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
+                            <img src="Images/126.jpg" class="img-responsive " alt="" />
                             <div class="rotate">
                                 <i></i>
                             </div>
@@ -167,7 +167,7 @@
                 <div class="col-md-4 work-grid">
                     <div id="nivo-lightbox-demo">
                         <a href="Images/213.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                            <img src="Images/213.jpg" class="img-responsive " alt="" />
+                            <img src="Images/123.jpg" class="img-responsive " alt="" />
                             <div class="rotate">
                                 <i></i>
                             </div>
@@ -179,4 +179,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
+
+    
 </asp:Content>

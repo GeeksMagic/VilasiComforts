@@ -50,15 +50,6 @@ Partial Public Class DashBoard
     Protected WithEvents LblNumNonACDoubleRooms As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblNumNonACSingleRooms control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblNumNonACSingleRooms As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
     '''TxtCustomerId control.
     '''</summary>
     '''<remarks>
@@ -158,6 +149,78 @@ Partial Public Class DashBoard
     Protected WithEvents LblTodayGuest As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''DdlRoomTypePriceUpdate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DdlRoomTypePriceUpdate As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''RequiredFieldValidator3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator3 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''TxtPriceUpdate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtPriceUpdate As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''RequiredFieldValidator4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator4 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''RegularExpressionValidator1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegularExpressionValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''BtnUpdate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUpdate As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''TxtReservedName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtReservedName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''RequiredFieldValidator2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator2 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''TxtReservedDate control.
     '''</summary>
     '''<remarks>
@@ -185,6 +248,42 @@ Partial Public Class DashBoard
     Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''TxtReservedCheckOut control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtReservedCheckOut As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''CalendarExtenderReservedCheckOutDate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CalendarExtenderReservedCheckOutDate As Global.AjaxControlToolkit.CalendarExtender
+
+    '''<summary>
+    '''RequiredFieldValidator5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator5 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''CompareValidator1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CompareValidator1 As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''DdlReservedRoomType control.
     '''</summary>
     '''<remarks>
@@ -203,29 +302,74 @@ Partial Public Class DashBoard
     Protected WithEvents rfv1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''TxtReservdNumOfRoooms control.
+    '''BtnReserve control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtReservdNumOfRoooms As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents BtnReserve As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''RequiredFieldValidator2 control.
+    '''TxtBlockCheckIn control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RequiredFieldValidator2 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents TxtBlockCheckIn As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''RegularExpressionAdults control.
+    '''CalendarExtender1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RegularExpressionAdults As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents CalendarExtender1 As Global.AjaxControlToolkit.CalendarExtender
+
+    '''<summary>
+    '''RequiredFieldValidator7 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator7 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''DdlBlockRoomType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DdlBlockRoomType As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''RequiredFieldValidator9 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator9 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''RblBlock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RblBlock As Global.System.Web.UI.WebControls.RadioButtonList
+
+    '''<summary>
+    '''BtnBlock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnBlock As Global.System.Web.UI.WebControls.Button
 End Class

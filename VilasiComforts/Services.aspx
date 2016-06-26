@@ -93,12 +93,12 @@
                     <h2><span style="font-style: italic; font-weight: 100; color: #2b3930">TARRIF CARD</span></h2>
                     <h6>(Incl. of all taxes)</h6>
                     <ul class="s_nav">
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;Non-AC Double Room : ₹ 1250</span></li>
+                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;<asp:Label ID="LblNonAc" runat="server"></asp:Label> : ₹ <asp:Label ID="LblNonAcPrice" runat="server"></asp:Label></span></li>
                        <%-- <li><span class="fa fa-arrow-circle-o-right">&nbsp;Non-AC Single Room : ₹ 900</span></li>--%>
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;AC Double Room     : ₹ 1990</span></li>
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;Suits              : ₹ 3000</span></li>
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;Extra Bed          : ₹ 200</span></li>
-                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;Extra Person       : ₹ 100</span></li>
+                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;<asp:Label ID="LblAcDouble" runat="server"></asp:Label> : ₹ <asp:Label ID="LblAcDoublePrice" runat="server"></asp:Label></span></li>
+                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;<asp:Label ID="LblSuit" runat="server"></asp:Label> : ₹ <asp:Label ID="LblSuitPrice" runat="server"></asp:Label></span></li>
+                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;<asp:Label ID="LblExtraBed" runat="server"></asp:Label> : ₹ <asp:Label ID="LblExtraBedPrice" runat="server"></asp:Label></span></li>
+                        <li><span class="fa fa-arrow-circle-o-right">&nbsp;<asp:Label ID="LblExtraPerson" runat="server"></asp:Label> : ₹ <asp:Label ID="LblExtraPersonPrice" runat="server"></asp:Label></span></li>
                     </ul>
                 </div>
                 <div class="clear"></div>

@@ -6,7 +6,7 @@ Imports System.Text
 Imports System.Web
 Imports System.Web.UI
 Imports System.Web.UI.WebControls
-Imports MySql.Data.MySqlClient
+'Imports MySql.Data.MySqlClient
 Imports VilasiComforts.BusinessLayer
 
 Public Class BookRoom
@@ -20,12 +20,13 @@ Public Class BookRoom
     Public action1 As String = String.Empty
     Public hash1 As String = String.Empty
     Public txnid1 As String = String.Empty
-
+    Dim rooms As New DataSet
     Dim objBookRoom As New BookRoomService
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        CalendarExtenderCheckIn.StartDate = DateTime.Now
-        CalendarExtenderCheckOut.StartDate = DateTime.Now
+        Dim todayDate As DateTime = DateTime.Now
+        CalendarExtenderCheckIn.StartDate = todayDate
+        CalendarExtenderCheckOut.StartDate = todayDate.AddDays(1)
 
         Try
 
@@ -75,8 +76,8 @@ Public Class BookRoom
     Protected Sub DdlRoomType_SelectedIndexChanged(sender As Object, e As EventArgs)
         DdlNomOfRooms.Items.Clear()
         'DdlAdults.Items.Clear()
-        Select Case DdlRoomType.SelectedValue
-            Case 1250
+        Select Case DdlRoomType.SelectedItem.Text
+            Case "AC Double Room"
                 Dim numofRooms1250 = New List(Of Integer)() From {1, 2, 3, 4}
                 For Each num In numofRooms1250
                     DdlNomOfRooms.Items.Add(num)
@@ -85,7 +86,7 @@ Public Class BookRoom
                 'For Each num In AdultRooms1250
                 '    DdlAdults.Items.Add(num)
                 'Next
-            Case 900
+            Case "Non-AC Double Room"
                 Dim numofRooms900 = New List(Of Integer)() From {1, 2}
                 For Each num In numofRooms900
                     DdlNomOfRooms.Items.Add(num)
@@ -94,16 +95,16 @@ Public Class BookRoom
                 'For Each num In adultsRooms900
                 '    DdlAdults.Items.Add(num)
                 'Next
-            Case 1990
-                Dim numofRooms1990 = New List(Of Integer)() From {1, 2, 3, 4, 5, 6}
-                For Each num In numofRooms1990
-                    DdlNomOfRooms.Items.Add(num)
-                Next
+                'Case 1990
+                '    Dim numofRooms1990 = New List(Of Integer)() From {1, 2, 3, 4, 5, 6}
+                '    For Each num In numofRooms1990
+                '        DdlNomOfRooms.Items.Add(num)
+                '    Next
                 'Dim adultsRooms1990 = New List(Of Integer)() From {1, 2}
                 'For Each num In adultsRooms1990
                 '    DdlAdults.Items.Add(num)
                 'Next
-            Case 3000
+            Case "Suit Room"
                 Dim numofRooms3000 = New List(Of Integer)() From {1, 2}
                 For Each num In numofRooms3000
                     DdlNomOfRooms.Items.Add(num)
@@ -142,7 +143,7 @@ Public Class BookRoom
                 '    Dim numofDays As String = (Convert.ToDateTime(TxtCheckOut.Text) - Convert.ToDateTime(TxtCheckIn.Text)).ToString
                 '    LblAmount.Text = DdlNomOfRooms.SelectedValue * DdlRoomType.SelectedValue * numofDays
                 'Else
-                LblAmount.Text = DdlNomOfRooms.SelectedValue * DdlRoomType.SelectedValue * (Convert.ToInt32(ts.Days) + 1)
+                LblAmount.Text = DdlNomOfRooms.SelectedValue * DdlRoomType.SelectedValue * (Convert.ToInt32(ts.Days))
                 'End If
             End If
         End If
@@ -150,15 +151,21 @@ Public Class BookRoom
     End Sub
 
     Private Sub BtnBook_Click(sender As Object, e As EventArgs) Handles BtnBook.Click
-        PnlBookingInformation.Visible = False
-        PnlGuestInfo.Visible = True
-        LblCheckIn.Text = TxtCheckIn.Text
-        LblCheckOut.Text = TxtCheckOut.Text
-        LblRoomType.Text = DdlRoomType.SelectedItem.Text
-        LblNumAdults.Text = TxtAdults.Text
-        LblNumChilds.Text = TxtChildrens.Text
-        LblNumRooms.Text = DdlNomOfRooms.SelectedValue
-        LblPayAmount.Text = LblAmount.Text
+        rooms = objBookRoom.checkRoom(TxtCheckIn.Text, DdlRoomType.SelectedItem.Text, DdlRoomType.SelectedValue)
+        If rooms.Tables(0).Rows.Count > 0 Then
+            Session("RoomId") = rooms.Tables(0).Rows(0)("RoomId")
+            PnlBookingInformation.Visible = False
+            PnlGuestInfo.Visible = True
+            LblCheckIn.Text = TxtCheckIn.Text
+            LblCheckOut.Text = TxtCheckOut.Text
+            LblRoomType1.Text = DdlRoomType.SelectedItem.Text
+            LblNumAdults.Text = TxtAdults.Text
+            LblNumChilds.Text = TxtChildrens.Text
+            LblNumRooms.Text = DdlNomOfRooms.SelectedValue
+            LblPayAmount.Text = LblAmount.Text
+        Else
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('" + DdlRoomType.SelectedItem.Text + " rooms are not available on " + TxtCheckIn.Text + "');", True)
+        End If
     End Sub
 
     Private Sub LbtEditRoomDetailsForm_Click(sender As Object, e As EventArgs) Handles LbtEditRoomDetailsForm.Click
@@ -166,7 +173,7 @@ Public Class BookRoom
         PnlBookingInformation.Visible = True
         TxtCheckIn.Text = LblCheckIn.Text
         TxtCheckOut.Text = LblCheckOut.Text
-        DdlRoomType.SelectedItem.Text = LblRoomType.Text
+        DdlRoomType.SelectedItem.Text = LblRoomType1.Text
         TxtAdults.Text = LblNumAdults.Text
         TxtChildrens.Text = LblNumChilds.Text
         DdlNomOfRooms.SelectedValue = LblNumRooms.Text
@@ -177,7 +184,7 @@ Public Class BookRoom
         PnlBookingInformation.Visible = True
         TxtCheckIn.Text = LblCheckIn.Text
         TxtCheckOut.Text = LblCheckOut.Text
-        DdlRoomType.SelectedItem.Text = LblRoomType.Text
+        DdlRoomType.SelectedItem.Text = LblRoomType1.Text
         TxtAdults.Text = LblNumAdults.Text
         TxtChildrens.Text = LblNumChilds.Text
         DdlNomOfRooms.SelectedValue = LblNumRooms.Text
@@ -189,10 +196,10 @@ Public Class BookRoom
         TxtFirstName.Text = LblGuestName.Text
         TxtEmail.Text = LblGuestEmail.Text
         TxtMobile.Text = Replace(LblGuestMobile.Text, "+91", "")
-        TxtCity.Text = LblGuestCity1.Text
-        TxtZip.Text = LblGuestZip.Text
-        TxtAddress.Text = LblGuestAddress.Text
-        TxtRequest.Text = LblSpclRequirements.Text
+        TxtCity.Text = Lblcity.Text
+        TxtZip.Text = Lblzip.Text
+        TxtAddress.Text = Lbladdress.Text
+        TxtRequest.Text = Lblspclrequest.Text
         ChkAgree.Checked = True
     End Sub
 
@@ -207,19 +214,33 @@ Public Class BookRoom
             phone.Text = TxtMobile.Text
             LblGuestEmail.Text = TxtEmail.Text
             email.Text = TxtEmail.Text
-            LblGuestCity1.Text = TxtCity.Text
-            LblGuestAddress.Text = TxtAddress.Text
-            LblGuestZip.Text = TxtZip.Text
-            LblGuestCheckIn.Text = LblCheckIn.Text
-            LblGuestCheckOut.Text = LblCheckOut.Text
-            LblGuestRoomType.Text = LblRoomType.Text
-            LblGuestNumOfRooms.Text = LblNumRooms.Text
-            LblGuestAdults.Text = LblNumAdults.Text
-            LblGuestChildrens.Text = LblNumChilds.Text
+            Lblcity.Text = TxtCity.Text
+            city.Text = TxtCity.Text
+            Lbladdress.Text = TxtAddress.Text
+            address.Text = TxtAddress.Text
+            Lblzip.Text = TxtZip.Text
+            zip.Text = TxtZip.Text
+            Lblchkin.Text = LblCheckIn.Text
+            chkin.Text = LblCheckIn.Text
+            Lblchkout.Text = LblCheckOut.Text
+            chkout.Text = LblCheckOut.Text
+            Lblroomtype.Text = LblRoomType1.Text
+            roomtype.Text = LblRoomType1.Text
+            Lblnoofrooms.Text = LblNumRooms.Text
+            noofrooms.Text = Lblnoofrooms.Text
+            Lbladults.Text = LblNumAdults.Text
+            adults.Text = LblNumAdults.Text
+            Lblchildren.Text = LblNumChilds.Text
+            children.Text = LblNumChilds.Text
+            ' LblGuestAmount.Text = LblAmount.Text
             LblGuestAmount.Text = LblAmount.Text
+            LblServiceCharges.Text = (Convert.ToDouble(LblAmount.Text) * 0.029).ToString
             'amount.Text = LblAmount.Text
-            amount.Text = "1"
-            LblSpclRequirements.Text = TxtRequest.Text
+            LblTotalPaidAmount.Text = (Convert.ToDouble(LblGuestAmount.Text) + Convert.ToDouble(LblServiceCharges.Text)).ToString
+            'amount.Text = "1"
+            amount.Text = LblTotalPaidAmount.Text
+            Lblspclrequest.Text = TxtRequest.Text
+            spclrequest.Text = TxtRequest.Text
         Else
             ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('Please Agree with the Terms & Conditions of Vilasi!!!!');", True)
         End If
@@ -242,6 +263,7 @@ Public Class BookRoom
     End Sub
 
     Private Sub BtnPay_Click(sender As Object, e As EventArgs) Handles BtnPay.Click
+        ' Response.Redirect("ResponseHandling.aspx?status=success")
         Try
 
             Dim hashVarsSeq As String()
@@ -289,8 +311,40 @@ Public Class BookRoom
                         ElseIf hash_var = "amount" Then
                             hash_string = hash_string & amount.Text
                             hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblchkin" Then
+                            '    hash_string = hash_string & Lblchkin.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblchkout" Then
+                            '    hash_string = hash_string & Lblchkout.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lbladults" Then
+                            '    hash_string = hash_string & Lbladults.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblchildren" Then
+                            '    hash_string = hash_string & Lblchildren.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblroomtype" Then
+                            '    hash_string = hash_string & Lblroomtype.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblnoofrooms" Then
+                            '    hash_string = hash_string & Lblnoofrooms.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblcity" Then
+                            '    hash_string = hash_string & Lblcity.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblzip" Then
+                            '    hash_string = hash_string & Lblzip.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lbladdress" Then
+                            '    hash_string = hash_string & Lbladdress.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblspclrequest" Then
+                            '    hash_string = hash_string & Lblspclrequest.Text
+                            '    hash_string = hash_string & "|"c
+                            'ElseIf hash_var = "Lblphone" Then
+                            '    hash_string = hash_string & phone.Text
+                            '    hash_string = hash_string & "|"c
                         Else
-
                             hash_string = hash_string & (If(Request.Form("ctl00$ContentPlaceHolder1$" + hash_var) IsNot Nothing, Request.Form("ctl00$ContentPlaceHolder1$" + hash_var), ""))
                             ' isset if else
                             hash_string = hash_string & "|"c
@@ -337,18 +391,30 @@ Public Class BookRoom
                 data.Add("furl", furl.Text.Trim())
                 data.Add("lastname", "")
                 data.Add("curl", "")
-                data.Add("address1", LblGuestAddress.Text)
+                data.Add("address1", address.Text.Trim())
                 data.Add("address2", "")
-                data.Add("city", LblGuestCity1.Text)
+                data.Add("city", city.Text.Trim)
                 data.Add("state", "")
                 data.Add("country", "")
-                data.Add("zipcode", LblGuestZip.Text)
-                data.Add("udf1", "")
-                data.Add("udf2", "")
-                data.Add("udf3", "")
-                data.Add("udf4", "")
-                data.Add("udf5", "")
-                data.Add("pg", "")
+                data.Add("zipcode", zip.Text.Trim)
+                'data.Add("chkin", chkin.Text.Trim)
+                'data.Add("chkout", chkout.Text.Trim)
+                'data.Add("udf1", adults.Text.Trim)
+                'data.Add("udf2", children.Text.Trim)
+                'data.Add("udf3", roomtype.Text.Trim)
+                'data.Add("udf4", noofrooms.Text.Trim)
+                'data.Add("udf5", spclrequest.Text.Trim)
+                Session("address1") = address.Text
+                Session("zipcode") = zip.Text
+                Session("chkin") = chkin.Text
+                Session("chkout") = chkout.Text
+                Session("adults") = adults.Text
+                Session("children") = children.Text
+                Session("RoomType") = roomtype.Text
+                Session("noofrooms") = noofrooms.Text
+                Session("spclrequest") = spclrequest.Text
+                Session("Mobile") = phone.Text
+                Session("City") = city.Text
                 data.Add("service_provider", service_provider.Text.Trim())
                 Dim strForm As String = PreparePOSTForm(action1, data)
                 Page.Controls.Add(New LiteralControl(strForm))
@@ -409,6 +475,12 @@ Public Class BookRoom
             DdlRoomType.DataTextField = "RoomType"
             DdlRoomType.DataValueField = "Rent"
             DdlRoomType.DataBind()
+            LblNonAcDouble.Text = rooms.Tables(0).Rows(1)("RoomType")
+            LblNonAcDoublePrice.Text = rooms.Tables(0).Rows(1)("Rent")
+            LblAcDouble.Text = rooms.Tables(0).Rows(0)("RoomType")
+            LblAcDoublePrice.Text = rooms.Tables(0).Rows(0)("Rent")
+            LblSuit.Text = rooms.Tables(0).Rows(2)("RoomType")
+            LblSuitPrice.Text = rooms.Tables(0).Rows(2)("Rent")
         Catch ex As Exception
             ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('Sorry something went wrong!!');", True)
         End Try

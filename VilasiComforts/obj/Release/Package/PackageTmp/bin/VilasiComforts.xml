@@ -6,177 +6,321 @@ VilasiComforts
 </name>
 </assembly>
 <members>
-<member name="F:VilasiComforts.AllotRoom.TxtBookingNumber">
+<member name="F:VilasiComforts.DashBoard.Book">
 	<summary>
-TxtBookingNumber control.
+Book control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.RfvBookingId">
+</member><member name="F:VilasiComforts.DashBoard.LblNumSuitRooms">
 	<summary>
-RfvBookingId control.
+LblNumSuitRooms control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.BtnCheck">
+</member><member name="F:VilasiComforts.DashBoard.LblNumACDoubleRoom">
 	<summary>
-BtnCheck control.
+LblNumACDoubleRoom control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.UpdCustomerDetails">
+</member><member name="F:VilasiComforts.DashBoard.LblNumNonACDoubleRooms">
 	<summary>
-UpdCustomerDetails control.
+LblNumNonACDoubleRooms control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.PnlCustomers">
+</member><member name="F:VilasiComforts.DashBoard.TxtCustomerId">
 	<summary>
-PnlCustomers control.
+TxtCustomerId control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblName">
+</member><member name="F:VilasiComforts.DashBoard.TxtCheckIn">
 	<summary>
-LblName control.
+TxtCheckIn control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblMobile">
+</member><member name="F:VilasiComforts.DashBoard.CalendarExtenderCheckIn">
 	<summary>
-LblMobile control.
+CalendarExtenderCheckIn control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblMail">
+</member><member name="F:VilasiComforts.DashBoard.DdlRoomNumber">
 	<summary>
-LblMail control.
+DdlRoomNumber control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblAddress">
+</member><member name="F:VilasiComforts.DashBoard.BtnSearch">
 	<summary>
-LblAddress control.
+BtnSearch control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblRoomType">
+</member><member name="F:VilasiComforts.DashBoard.updCustomer">
 	<summary>
-LblRoomType control.
+updCustomer control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblNumOfRooms">
+</member><member name="F:VilasiComforts.DashBoard.grvGuest">
 	<summary>
-LblNumOfRooms control.
+grvGuest control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblAdult">
+</member><member name="F:VilasiComforts.DashBoard.grvContact">
 	<summary>
-LblAdult control.
+grvContact control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblChild">
+</member><member name="F:VilasiComforts.DashBoard.LblTotalGuest">
 	<summary>
-LblChild control.
+LblTotalGuest control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblCkeckIn">
+</member><member name="F:VilasiComforts.DashBoard.LblMonthGuest">
 	<summary>
-LblCkeckIn control.
+LblMonthGuest control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.TxtCheckInTime">
+</member><member name="F:VilasiComforts.DashBoard.LblTodayGuest">
 	<summary>
-TxtCheckInTime control.
+LblTodayGuest control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblCheckOut">
+</member><member name="F:VilasiComforts.DashBoard.DdlRoomTypePriceUpdate">
 	<summary>
-LblCheckOut control.
+DdlRoomTypePriceUpdate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.TxtCheckOutTime">
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator3">
 	<summary>
-TxtCheckOutTime control.
+RequiredFieldValidator3 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblTotalAmt">
+</member><member name="F:VilasiComforts.DashBoard.TxtPriceUpdate">
 	<summary>
-LblTotalAmt control.
+TxtPriceUpdate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.TxtAdvance">
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator4">
 	<summary>
-TxtAdvance control.
+RequiredFieldValidator4 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.LblRemainingAmt">
+</member><member name="F:VilasiComforts.DashBoard.RegularExpressionValidator1">
 	<summary>
-LblRemainingAmt control.
+RegularExpressionValidator1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.BtnOccupyRoom">
+</member><member name="F:VilasiComforts.DashBoard.BtnUpdate">
 	<summary>
-BtnOccupyRoom control.
+BtnUpdate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.AllotRoom.BtnVacate">
+</member><member name="F:VilasiComforts.DashBoard.TxtReservedName">
 	<summary>
-BtnVacate control.
+TxtReservedName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.TxtReservedDate">
+	<summary>
+TxtReservedDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.CalendarExtenderReservedDate">
+	<summary>
+CalendarExtenderReservedDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.TxtReservedCheckOut">
+	<summary>
+TxtReservedCheckOut control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.CalendarExtenderReservedCheckOutDate">
+	<summary>
+CalendarExtenderReservedCheckOutDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.CompareValidator1">
+	<summary>
+CompareValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.DdlReservedRoomType">
+	<summary>
+DdlReservedRoomType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.rfv1">
+	<summary>
+rfv1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.BtnReserve">
+	<summary>
+BtnReserve control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.TxtBlockCheckIn">
+	<summary>
+TxtBlockCheckIn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.DdlBlockRoomType">
+	<summary>
+DdlBlockRoomType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.RblBlock">
+	<summary>
+RblBlock control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.DashBoard.BtnBlock">
+	<summary>
+BtnBlock control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -278,367 +422,6 @@ BtnCheck control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.VilasiAdmin.head">
-	<summary>
-head control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.VilasiAdmin.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.VilasiAdmin.scrpt1">
-	<summary>
-scrpt1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.VilasiAdmin.LblUserName">
-	<summary>
-LblUserName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.VilasiAdmin.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.Book">
-	<summary>
-Book control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblNumSuitRooms">
-	<summary>
-LblNumSuitRooms control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblNumACDoubleRoom">
-	<summary>
-LblNumACDoubleRoom control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblNumNonACDoubleRooms">
-	<summary>
-LblNumNonACDoubleRooms control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblNumNonACSingleRooms">
-	<summary>
-LblNumNonACSingleRooms control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.TxtCustomerId">
-	<summary>
-TxtCustomerId control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.TxtCheckIn">
-	<summary>
-TxtCheckIn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.CalendarExtenderCheckIn">
-	<summary>
-CalendarExtenderCheckIn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.DdlRoomNumber">
-	<summary>
-DdlRoomNumber control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.BtnSearch">
-	<summary>
-BtnSearch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.updCustomer">
-	<summary>
-updCustomer control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.grvGuest">
-	<summary>
-grvGuest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.grvContact">
-	<summary>
-grvContact control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblTotalGuest">
-	<summary>
-LblTotalGuest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblMonthGuest">
-	<summary>
-LblMonthGuest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.LblTodayGuest">
-	<summary>
-LblTodayGuest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.TxtReservedDate">
-	<summary>
-TxtReservedDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.CalendarExtenderReservedDate">
-	<summary>
-CalendarExtenderReservedDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator1">
-	<summary>
-RequiredFieldValidator1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.DdlReservedRoomType">
-	<summary>
-DdlReservedRoomType control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.rfv1">
-	<summary>
-rfv1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.TxtReservdNumOfRoooms">
-	<summary>
-TxtReservdNumOfRoooms control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.RequiredFieldValidator2">
-	<summary>
-RequiredFieldValidator2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.DashBoard.RegularExpressionAdults">
-	<summary>
-RegularExpressionAdults control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:VilasiComforts.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:VilasiComforts.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:VilasiComforts.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:VilasiComforts.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:VilasiComforts.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:VilasiComforts.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="F:VilasiComforts.ContactUs.UpdateProgress">
-	<summary>
-UpdateProgress control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.UpdContactForm">
-	<summary>
-UpdContactForm control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.TxtUserName">
-	<summary>
-TxtUserName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RfvUserName">
-	<summary>
-RfvUserName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.TxtUserEmail">
-	<summary>
-TxtUserEmail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RfvUserEmail">
-	<summary>
-RfvUserEmail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RegularExpEmail">
-	<summary>
-RegularExpEmail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.TxtPhone">
-	<summary>
-TxtPhone control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RfvPhone">
-	<summary>
-RfvPhone control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RegularExpressionMobile">
-	<summary>
-RegularExpressionMobile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.TxtUsrMessge">
-	<summary>
-TxtUsrMessge control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.RfvUsrMessge">
-	<summary>
-RfvUsrMessge control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.ContactUs.BtnSubmit">
-	<summary>
-BtnSubmit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:VilasiComforts.VIlasi.head">
 	<summary>
 head control.
@@ -666,54 +449,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:VilasiComforts.VIlasi.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.userId">
-	<summary>
-userId control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.RfvUserName">
-	<summary>
-RfvUserName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.Password">
-	<summary>
-Password control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.RfvPassword">
-	<summary>
-RfvPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:VilasiComforts.Admin.BtnLogin">
-	<summary>
-BtnLogin control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1343,9 +1078,9 @@ LblNumChilds control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblRoomType">
+</member><member name="F:VilasiComforts.BookRoom.LblRoomType1">
 	<summary>
-LblRoomType control.
+LblRoomType1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1479,6 +1214,14 @@ RfvCity control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:VilasiComforts.BookRoom.RegularExpressionValidatorCity">
+	<summary>
+RegularExpressionValidatorCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:VilasiComforts.BookRoom.TxtZip">
 	<summary>
 TxtZip control.
@@ -1490,6 +1233,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:VilasiComforts.BookRoom.RfvZip">
 	<summary>
 RfvZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.RegularExpressionZip">
+	<summary>
+RegularExpressionZip control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1591,49 +1342,97 @@ LblEditRoomDetails control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestCheckIn">
+</member><member name="F:VilasiComforts.BookRoom.chkin">
 	<summary>
-LblGuestCheckIn control.
+chkin control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestCheckOut">
+</member><member name="F:VilasiComforts.BookRoom.Lblchkin">
 	<summary>
-LblGuestCheckOut control.
+Lblchkin control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestAdults">
+</member><member name="F:VilasiComforts.BookRoom.chkout">
 	<summary>
-LblGuestAdults control.
+chkout control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestChildrens">
+</member><member name="F:VilasiComforts.BookRoom.Lblchkout">
 	<summary>
-LblGuestChildrens control.
+Lblchkout control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestRoomType">
+</member><member name="F:VilasiComforts.BookRoom.adults">
 	<summary>
-LblGuestRoomType control.
+adults control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestNumOfRooms">
+</member><member name="F:VilasiComforts.BookRoom.Lbladults">
 	<summary>
-LblGuestNumOfRooms control.
+Lbladults control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.children">
+	<summary>
+children control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.Lblchildren">
+	<summary>
+Lblchildren control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.roomtype">
+	<summary>
+roomtype control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.Lblroomtype">
+	<summary>
+Lblroomtype control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.noofrooms">
+	<summary>
+noofrooms control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.Lblnoofrooms">
+	<summary>
+Lblnoofrooms control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1703,41 +1502,81 @@ LblGuestMobile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.TxtGuestCity1">
+</member><member name="F:VilasiComforts.BookRoom.city">
 	<summary>
-TxtGuestCity1 control.
+city control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestCity1">
+</member><member name="F:VilasiComforts.BookRoom.Lblcity">
 	<summary>
-LblGuestCity1 control.
+Lblcity control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestZip">
+</member><member name="F:VilasiComforts.BookRoom.zip">
 	<summary>
-LblGuestZip control.
+zip control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestAddress">
+</member><member name="F:VilasiComforts.BookRoom.Lblzip">
 	<summary>
-LblGuestAddress control.
+Lblzip control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblSpclRequirements">
+</member><member name="F:VilasiComforts.BookRoom.address">
 	<summary>
-LblSpclRequirements control.
+address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.Lbladdress">
+	<summary>
+Lbladdress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.spclrequest">
+	<summary>
+spclrequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.Lblspclrequest">
+	<summary>
+Lblspclrequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblGuestAmount">
+	<summary>
+LblGuestAmount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblServiceCharges">
+	<summary>
+LblServiceCharges control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1751,9 +1590,9 @@ amount control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:VilasiComforts.BookRoom.LblGuestAmount">
+</member><member name="F:VilasiComforts.BookRoom.LblTotalPaidAmount">
 	<summary>
-LblGuestAmount control.
+LblTotalPaidAmount control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1807,6 +1646,70 @@ furl control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblNonAcDouble">
+	<summary>
+LblNonAcDouble control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblNonAcDoublePrice">
+	<summary>
+LblNonAcDoublePrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblAcDouble">
+	<summary>
+LblAcDouble control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblAcDoublePrice">
+	<summary>
+LblAcDoublePrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblSuit">
+	<summary>
+LblSuit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.BookRoom.LblSuitPrice">
+	<summary>
+LblSuitPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ResponseHandling.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ResponseHandling.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:VilasiComforts.Services.BookNow">
 	<summary>
 BookNow control.
@@ -1815,9 +1718,482 @@ BookNow control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:VilasiComforts.Services.LblNonAc">
+	<summary>
+LblNonAc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblNonAcPrice">
+	<summary>
+LblNonAcPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblAcDouble">
+	<summary>
+LblAcDouble control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblAcDoublePrice">
+	<summary>
+LblAcDoublePrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblSuit">
+	<summary>
+LblSuit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblSuitPrice">
+	<summary>
+LblSuitPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblExtraBed">
+	<summary>
+LblExtraBed control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblExtraBedPrice">
+	<summary>
+LblExtraBedPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblExtraPerson">
+	<summary>
+LblExtraPerson control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Services.LblExtraPersonPrice">
+	<summary>
+LblExtraPersonPrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.VilasiAdmin.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.VilasiAdmin.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.VilasiAdmin.scrpt1">
+	<summary>
+scrpt1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.VilasiAdmin.LblUserName">
+	<summary>
+LblUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.VilasiAdmin.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.userId">
+	<summary>
+userId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.RfvUserName">
+	<summary>
+RfvUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.RfvPassword">
+	<summary>
+RfvPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.Admin.BtnLogin">
+	<summary>
+BtnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:VilasiComforts.LogOut.form1">
 	<summary>
 form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:VilasiComforts.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:VilasiComforts.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:VilasiComforts.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:VilasiComforts.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:VilasiComforts.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:VilasiComforts.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:VilasiComforts.ContactUs.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.UpdContactForm">
+	<summary>
+UpdContactForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.TxtUserName">
+	<summary>
+TxtUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RfvUserName">
+	<summary>
+RfvUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.TxtUserEmail">
+	<summary>
+TxtUserEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RfvUserEmail">
+	<summary>
+RfvUserEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RegularExpEmail">
+	<summary>
+RegularExpEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.TxtPhone">
+	<summary>
+TxtPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RfvPhone">
+	<summary>
+RfvPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RegularExpressionMobile">
+	<summary>
+RegularExpressionMobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.TxtUsrMessge">
+	<summary>
+TxtUsrMessge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.RfvUsrMessge">
+	<summary>
+RfvUsrMessge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.ContactUs.BtnSubmit">
+	<summary>
+BtnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.TxtBookingNumber">
+	<summary>
+TxtBookingNumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.RfvBookingId">
+	<summary>
+RfvBookingId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.BtnCheck">
+	<summary>
+BtnCheck control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.UpdCustomerDetails">
+	<summary>
+UpdCustomerDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.PnlCustomers">
+	<summary>
+PnlCustomers control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblName">
+	<summary>
+LblName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblMobile">
+	<summary>
+LblMobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblMail">
+	<summary>
+LblMail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblAddress">
+	<summary>
+LblAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblRoomType">
+	<summary>
+LblRoomType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblNumOfRooms">
+	<summary>
+LblNumOfRooms control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblAdult">
+	<summary>
+LblAdult control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblChild">
+	<summary>
+LblChild control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblCkeckIn">
+	<summary>
+LblCkeckIn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.TxtCheckInTime">
+	<summary>
+TxtCheckInTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblCheckOut">
+	<summary>
+LblCheckOut control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.TxtCheckOutTime">
+	<summary>
+TxtCheckOutTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblTotalAmt">
+	<summary>
+LblTotalAmt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.TxtAdvance">
+	<summary>
+TxtAdvance control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.LblRemainingAmt">
+	<summary>
+LblRemainingAmt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.BtnOccupyRoom">
+	<summary>
+BtnOccupyRoom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:VilasiComforts.AllotRoom.BtnVacate">
+	<summary>
+BtnVacate control.
 </summary>
 	<remarks>
 Auto-generated field.

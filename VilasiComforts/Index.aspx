@@ -112,6 +112,8 @@
                                         <asp:ListItem Text="AC Double Room" Value="1990"></asp:ListItem>
                                         <asp:ListItem Text="Suit Room" Value="3000"></asp:ListItem>--%>
                                 </asp:DropDownList>
+                                 <asp:RequiredFieldValidator ID="RfvRoomType" runat="server" ControlToValidate="DdlRoomType" Font-Size="10px"
+                                        ValidationGroup="Availability" InitialValue="0" ErrorMessage="*" ForeColor="Red" />
                                 <br />
                                 <h5>Adults:</h5>
                                 <asp:TextBox ID="TxtAdults" runat="server" placeholder="Members" CssClass="frm-field required form-control" ForeColor="Black" MaxLength="2"></asp:TextBox>
@@ -119,7 +121,11 @@
                                     ValidationExpression="^[0-9]+$" ErrorMessage="Enter Numeric Value!!" Font-Size="10px"
                                     ValidationGroup="book" ForeColor="Red"></asp:RegularExpressionValidator>
                                 <br />
-                                <asp:Button ID="BtnCheck" runat="server" CssClass="btn btn-info" Text="Check Availability" ValidationGroup="Availability" />
+                                <asp:UpdatePanel runat="server">
+                                    <ContentTemplate>
+                                        <asp:Button ID="BtnCheck" runat="server" CssClass="btn btn-info" Text="Check Availability" ValidationGroup="Availability" />
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
                             </div>
                         </div>
                     </div>
@@ -184,7 +190,8 @@
                                     <br />
                                     <p class="fa fa-phone">&nbsp;&nbsp;0816- 2255789,2277589</p>
                                     <br />
-                                    <p class="fa fa-envelope"><a href="mailto:info@vilasicomforts.com">&nbsp;info@vilasicomforts.com</a>,<a href="mailto:vilasicomforts.tumkur@gmail.com"><br />&nbsp;&nbsp;&nbsp;&nbsp; vilasicomforts.tumkur@gmail.com</a></p>
+                                    <p class="fa fa-envelope"><a href="mailto:info@vilasicomforts.com">&nbsp;info@vilasicomforts.com</a>,<a href="mailto:vilasicomforts.tumkur@gmail.com"><br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp; vilasicomforts.tumkur@gmail.com</a></p>
                                 </div>
                             </div>
                             <div class="col-lg-4">

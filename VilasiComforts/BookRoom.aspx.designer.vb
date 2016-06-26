@@ -302,13 +302,13 @@ Partial Public Class BookRoom
     Protected WithEvents LblNumChilds As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblRoomType control.
+    '''LblRoomType1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblRoomType As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblRoomType1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''LblNumRooms control.
@@ -599,58 +599,112 @@ Partial Public Class BookRoom
     Protected WithEvents LblEditRoomDetails As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblGuestCheckIn control.
+    '''chkin control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestCheckIn As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents chkin As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestCheckOut control.
+    '''Lblchkin control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestCheckOut As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lblchkin As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblGuestAdults control.
+    '''chkout control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestAdults As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents chkout As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestChildrens control.
+    '''Lblchkout control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestChildrens As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lblchkout As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblGuestRoomType control.
+    '''adults control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestRoomType As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents adults As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestNumOfRooms control.
+    '''Lbladults control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestNumOfRooms As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lbladults As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''children control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents children As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lblchildren control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblchildren As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''roomtype control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents roomtype As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lblroomtype control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblroomtype As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''noofrooms control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents noofrooms As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lblnoofrooms control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblnoofrooms As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''LbtEditFormDetails control.
@@ -725,49 +779,94 @@ Partial Public Class BookRoom
     Protected WithEvents LblGuestMobile As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TxtGuestCity1 control.
+    '''city control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtGuestCity1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents city As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestCity1 control.
+    '''Lblcity control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestCity1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lblcity As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblGuestZip control.
+    '''zip control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestZip As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents zip As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestAddress control.
+    '''Lblzip control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestAddress As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lblzip As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LblSpclRequirements control.
+    '''address control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblSpclRequirements As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents address As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lbladdress control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lbladdress As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''spclrequest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents spclrequest As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lblspclrequest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblspclrequest As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblGuestAmount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblGuestAmount As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblServiceCharges control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblServiceCharges As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''amount control.
@@ -779,13 +878,13 @@ Partial Public Class BookRoom
     Protected WithEvents amount As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblGuestAmount control.
+    '''LblTotalPaidAmount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblGuestAmount As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblTotalPaidAmount As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''BtnPay control.
@@ -840,4 +939,58 @@ Partial Public Class BookRoom
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents furl As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''LblNonAcDouble control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblNonAcDouble As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblNonAcDoublePrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblNonAcDoublePrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblAcDouble control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAcDouble As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblAcDoublePrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAcDoublePrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblSuit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblSuit As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblSuitPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblSuitPrice As Global.System.Web.UI.WebControls.Label
 End Class

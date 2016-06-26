@@ -88,9 +88,9 @@
                                     <li>
                                         <a href="AllotRoom">Allot Room</a>
                                     </li>
-                                    <li>
+                                   <%-- <li>
                                         <a href="AsignRoom">Assign Room</a>
-                                    </li>
+                                    </li>--%>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>

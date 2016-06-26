@@ -62,6 +62,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VilasiComforts.Model\VilasiComforts.Model.vbproj">
+      <Project>{05d5df40-9e5b-435e-8fc7-882e207bd2f8}</Project>
+      <Name>VilasiComforts.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />

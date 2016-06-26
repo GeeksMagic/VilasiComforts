@@ -42,7 +42,8 @@ Public Class ContactUs
 
             'Add your email address to the recipients
             message.[To].Add(TxtUserEmail.Text)
-
+            message.To.Add("vilasicomforts.tumkur@gmail.com")
+            message.Bcc.Add("geeksmagiccontact@gmail.com")
             'Configure the address we are sending the mail from
             Dim address As New MailAddress("no-reply@vilasicomforts.com")
             message.From = address

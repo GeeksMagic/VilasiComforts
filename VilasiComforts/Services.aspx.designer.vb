@@ -21,4 +21,94 @@ Partial Public Class Services
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BookNow As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''LblNonAc control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblNonAc As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblNonAcPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblNonAcPrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblAcDouble control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAcDouble As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblAcDoublePrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAcDoublePrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblSuit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblSuit As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblSuitPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblSuitPrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblExtraBed control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblExtraBed As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblExtraBedPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblExtraBedPrice As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblExtraPerson control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblExtraPerson As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblExtraPersonPrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblExtraPersonPrice As Global.System.Web.UI.WebControls.Label
 End Class

@@ -60,9 +60,9 @@
                                 <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator2"
                                     ControlToValidate="TxtCheckOut" Text="Please Enter the CheckOut Date!!" Font-Size="10px"
                                     ForeColor="Red" ValidationGroup="book"></asp:RequiredFieldValidator>
-                                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="TxtCheckOut" Operator="GreaterThanEqual"
+                                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="TxtCheckOut" Operator="GreaterThan"
                                     ControlToCompare="TxtCheckIn" ValidationGroup="book" ForeColor="Red" Type="Date" Font-Size="10px"
-                                    Text="CheckOut Date should be Greater than or Same as CheckIn Date!!"></asp:CompareValidator>
+                                    Text="CheckOut Date should be Greater than CheckIn Date!!"></asp:CompareValidator>
                                 <Ajax:CalendarExtender ID="CalendarExtenderCheckOut" runat="server" Format="MM/dd/yyyy"
                                     TargetControlID="TxtCheckOut" CssClass="calenderAjax">
                                 </Ajax:CalendarExtender>
@@ -120,9 +120,9 @@
                         <div class="col-lg-3">
                             <h4>Childern </h4>
                             <asp:TextBox ID="TxtChildrens" runat="server" placeholder="Number of Childrens" CssClass="frm-field form-control" ForeColor="Black" MaxLength="2"></asp:TextBox>
-                            <asp:RequiredFieldValidator runat="server" ID="RfvChildrens"
+                            <%--<asp:RequiredFieldValidator runat="server" ID="RfvChildrens"
                                 ControlToValidate="TxtChildrens" Text="Please Enter Number of Childrens!!" Font-Size="10px"
-                                ForeColor="Red" ValidationGroup="book"></asp:RequiredFieldValidator><br />
+                                ForeColor="Red" ValidationGroup="book"></asp:RequiredFieldValidator><br />--%>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtChildrens"
                                 ValidationExpression="^[0-9]+$" ErrorMessage="Enter Numeric Value!!" Font-Size="10px"
                                 ValidationGroup="book" ForeColor="Red"></asp:RegularExpressionValidator>
@@ -221,7 +221,7 @@
                                     <i class="fa fa-home fa-fw"></i>Room Type
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblRoomType" runat="server"></asp:Label></em>
+                                                <asp:Label ID="LblRoomType1" runat="server"></asp:Label></em>
                                             </span>
                                 </a>
                                 <a class="list-group-item">
@@ -342,28 +342,32 @@
                                     <i class="fa fa-calendar fa-fw"></i>Check In
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestCheckIn" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="chkin" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblchkin" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                                 <a class="list-group-item">
                                     <i class="fa fa-calendar fa-fw"></i>Check Out
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestCheckOut" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="chkout" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblchkout" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                                 <a class="list-group-item">
                                     <i class="fa fa-users fa-fw"></i>Adults
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestAdults" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="adults" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lbladults" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                                 <a class="list-group-item">
                                     <i class="fa fa-user-md fa-fw"></i>Children
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestChildrens" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="children" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblchildren" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                             </div>
@@ -374,14 +378,16 @@
                                     <i class="fa fa-info fa-fw"></i>Room Type
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestRoomType" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="roomtype" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblroomtype" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                                 <a class="list-group-item">
                                     <i class="fa fa-info fa-fw"></i>Number Of Rooms
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestNumOfRooms" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="noofrooms" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblnoofrooms" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                 </a>
                             </div>
@@ -399,7 +405,7 @@
                             <div class="col-lg-6">
                                 <div>
                                     <a class="list-group-item">
-                                        <i class="fa fa-envelope-square fa-fw"></i>E Mail
+                                        <i class="fa fa-envelope-square fa-fw"></i>Name
                                    
                                             <span class="pull-right text-muted small" style="word-break: break-all"><em>
                                                 <asp:TextBox ID="firstname" runat="server" Style="display: none"></asp:TextBox>
@@ -429,15 +435,16 @@
                                         <i class="fa fa-archive fa-fw"></i>City
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:TextBox ID="TxtGuestCity1" runat="server" Style="display: none"></asp:TextBox>
-                                                <asp:Label ID="LblGuestCity1" runat="server" Text="AAA"></asp:Label></em>
+                                                <asp:TextBox ID="city" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblcity" runat="server" Text="AAA"></asp:Label></em>
                                             </span>
                                     </a>
                                     <a class="list-group-item">
                                         <i class="fa fa-tag fa-fw"></i>ZIP
                                    
                                             <span class="pull-right text-muted small"><em>
-                                                <asp:Label ID="LblGuestZip" runat="server" Text="572106"></asp:Label></em>
+                                                <asp:TextBox ID="zip" runat="server" style="display:none"></asp:TextBox>
+                                                <asp:Label ID="Lblzip" runat="server" Text="572106"></asp:Label></em>
                                             </span>
                                     </a>
                                     <a class="list-group-item panel panel-default">
@@ -445,7 +452,8 @@
                                             <i class="fa fa-archive fa-fw"></i>Address
                                                     <div class="panel-body">
                                                         <span class="pull-right text-muted small" style="word-break: break-all"><em>
-                                                            <asp:Label ID="LblGuestAddress" runat="server" Text="AAA"></asp:Label>
+                                                            <asp:TextBox ID="address" runat="server" style="display:none"></asp:TextBox>
+                                                            <asp:Label ID="Lbladdress" runat="server" Text="AAA"></asp:Label>
                                                         </em>
                                                         </span>
                                                     </div>
@@ -460,7 +468,8 @@
                                     </div>
                                     <div class="panel-body">
                                         <span class="pull-right text-muted small" style="word-break: break-all"><em>
-                                            <asp:Label ID="LblSpclRequirements" runat="server"></asp:Label>
+                                            <asp:TextBox ID="spclrequest" runat="server" style="display:none"></asp:TextBox>
+                                            <asp:Label ID="Lblspclrequest" runat="server"></asp:Label>
                                         </em>
                                         </span>
                                     </div>
@@ -468,10 +477,23 @@
 
                                 <hr />
                                 <div>
-                                    <i class="fa fa-rupee fa-fw"></i>Total Cost
+                                     <a class="list-group-item">
+                                       <i class="fa fa-rupee fa-fw"></i>Total Cost
                                          <span class="pull-right text-muted"><em><b>
-                                             <asp:TextBox ID="amount" runat="server" Style="display: none"></asp:TextBox>
                                              ₹<asp:Label ID="LblGuestAmount" runat="server" Text="AAA"></asp:Label></b></em>
+                                    </a>
+                                    <a class="list-group-item">
+                                       <i class="fa fa-rupee fa-fw"></i>Service Charges
+                                         <span class="pull-right text-muted"><em><b>
+                                             ₹<asp:Label ID="LblServiceCharges" runat="server" Text="AAA"></asp:Label></b></em>
+                                    </a>
+                                    <a class="list-group-item">
+                                       <i class="fa fa-rupee fa-fw"></i>Total Amount To Be Paid
+                                         <span class="pull-right text-muted"><em><b>
+                                              <asp:TextBox ID="amount" runat="server" Style="display: none"></asp:TextBox>
+                                             ₹<asp:Label ID="LblTotalPaidAmount" runat="server" Text="AAA"></asp:Label></b></em>
+                                    </a>
+                                    
                                 </div>
                                 <br />
                                 <br />
@@ -486,8 +508,8 @@
                             </div>
                             <asp:TextBox ID="service_provider" runat="server" Text="payu_paisa" Style="display: none" />
                             <asp:TextBox ID="productinfo" runat="server" Text="RoomBooking" Style="display: none"></asp:TextBox>
-                            <asp:TextBox ID="surl" runat="server" Text="http://Localhost:2015/Home.aspx" Style="display: none"></asp:TextBox>
-                            <asp:TextBox ID="furl" runat="server" Text="http://Localhost:2015/Home.aspx" Style="display: none"></asp:TextBox>
+                            <asp:TextBox ID="surl" runat="server" Text="http://localhost:2015/ResponseHandling.aspx" Style="display: none"></asp:TextBox>
+                            <asp:TextBox ID="furl" runat="server" Text="http://localhost:2015/ResponseHandling.aspx" Style="display: none"></asp:TextBox>
                         </div>
                     </div>
                 </asp:Panel>
@@ -502,7 +524,7 @@
                                     <%--<span class="next"></span>--%>
                                 </a>
                             </div>
-                            <h5><a href="#">Non-AC Double Room<span>₹ 1250</span></a></h5>
+                            <h5><a href="#"><asp:Label ID="LblNonAcDouble" runat="server"></asp:Label><span>₹ <asp:Label ID="LblNonAcDoublePrice" runat="server"></asp:Label></span></a></h5>
                             <p class="text-justify">Room Service, Multilingual Staff, 24/7 Hot Water Available, Wifi Internet Access, Complimentary Mineral Water Bottle, Food on Request, Laundry Service, Dry Cleaning, Rooms on Monthly Basis.</p>
                         </div>
                        <%-- <div class="grid1_of_3">
@@ -522,7 +544,7 @@
                                     <%--<span class="next"></span>--%>
                                 </a>
                             </div>
-                            <h5><a href="#">AC Double Room<span>₹ 1990</span></a></h5>
+                            <h5><a href="#"><asp:Label ID="LblAcDouble" runat="server"></asp:Label><span>₹ <asp:Label ID="LblAcDoublePrice" runat="server"></asp:Label></span></a></h5>
                             <p class="text-justify">Room Service, Multilingual Staff, 24/7 Hot Water Available, Wifi Internet Access, Complimentary Mineral Water Bottle, Food on Request, Laundry Service, Dry Cleaning, Rooms on Monthly Basis.</p>
                         </div>
                         <div class="grid1_of_3">
@@ -532,7 +554,7 @@
                                     <%--<span class="next"></span>--%>
                                 </a>
                             </div>
-                            <h5><a href="#">Suite Room<span>₹ 3000</span></a></h5>
+                            <h5><a href="#"><asp:Label ID="LblSuit" runat="server"></asp:Label><span>₹ <asp:Label ID="LblSuitPrice" runat="server"></asp:Label></span></a></h5>
                             <p class="text-justify">Room Service, Multilingual Staff, 24/7 Hot Water Available, Wifi Internet Access, Complimentary Mineral Water Bottle, Food on Request, Laundry Service, Dry Cleaning, Rooms on Monthly Basis.</p>
 
                         </div>

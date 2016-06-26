@@ -18,7 +18,13 @@ Public Class Index
     End Sub
 
     Private Sub BtnCheck_Click(sender As Object, e As EventArgs) Handles BtnCheck.Click
-        Response.Redirect("~/BookRoom.aspx?RoomType=" + DdlRoomType.SelectedValue + "&CheckIn=" + TxtCheckIn.Text + "&CheckOut=" + TxtCheckOut.Text + "&Adults=" + TxtAdults.Text)
+        Dim rooms As DataSet = objBookRoom.checkRoom(TxtCheckIn.Text, DdlRoomType.SelectedItem.Text, DdlRoomType.SelectedValue)
+        If rooms.Tables(0).Rows.Count > 0 Then
+            Response.Redirect("~/BookRoom.aspx?RoomType=" + DdlRoomType.SelectedValue + "&CheckIn=" + TxtCheckIn.Text + "&CheckOut=" + TxtCheckOut.Text + "&Adults=" + TxtAdults.Text)
+        Else
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "script", "alert('" + DdlRoomType.SelectedItem.Text + " rooms are not available on " + TxtCheckIn.Text + "');", True)
+        End If
+
     End Sub
 
     Sub getRoomList()
